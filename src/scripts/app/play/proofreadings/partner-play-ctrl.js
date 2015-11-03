@@ -8,6 +8,8 @@ function PartnerPlayCtrl (
   $analytics
 ) {
   //Add in some custom images for the 3 stories we are showcasing
+  angular.element(document.getElementsByClassName('loading-spinner'))
+    .css('display', 'none');
   $scope.pfImages = require('./pfImages');
 
   $scope.onScoreReset = function () {
